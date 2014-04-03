@@ -30,3 +30,19 @@ adhocModule:
 adhocModule:
   modules: [require('./scripts/module1'), require('./scripts/module2')]
 ```
+
+## Example code to require
+
+```javascript
+var _execute = function( mimosaConfig, options, next ) {
+  // do something appropriate for "beforeInstall", like copy files around
+  // or transform files before installing them somewhere
+  next();
+}
+
+exports.registration = function( mimosaConfig, register ) {
+  if ( mimosaConfig.isBuild ) {
+    register( ["postBuild"], "beforeInstall", _execute );
+  }
+};
+```
