@@ -1,0 +1,32 @@
+{
+  "name": "mimosa-adhoc-module",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dbashford/mimosa-adhoc-module",
+  "author": "David Bashford",
+  "description": "Allows for creation of local adhoc/one-off mimosa modules",
+  "contributors": [
+    {
+      "name": "David Bashford",
+      "email": "dbashford@hotmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dbashford/mimosa-adhoc-module"
+  },
+  "keywords": [
+    "mimosa",
+    "mmodule",
+    "run",
+    "script",
+    "module"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "main": "./src/index",
+  "scripts": {
+    "prepublish": "mimosa build"
+  }
+}
