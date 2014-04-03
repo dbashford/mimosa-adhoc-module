@@ -16,18 +16,20 @@ This module forwards registation and workflow functions on to your code, allowin
 
 ## Default Config
 
-```
-adhocModule:
+```javascript
+adhocModule: {
   modules: []
+}
 ```
 
-* `modules`: An array of `require` calls. The code `require`d in must expose a `registration` function. For information on the `registration` function and how to use it, see virtually any Mimosa module. [Here's a simple one.](https://github.com/dbashford/mimosa-handlebars-on-window/blob/master/src/index.js#L26-L28);
+* `modules`: An array of `require` calls. The code `require`d in must expose a `registration` function. For information on the `registration` function and how to use it, see virtually any Mimosa module. [Here's a simple one.](https://github.com/dbashford/mimosa-handlebars-on-window/blob/master/src/index.js#L26-L28)
 
 ## Example Config
 
-```
-adhocModule:
+```javascript
+adhocModule: {
   modules: [require('./scripts/module1'), require('./scripts/module2')]
+}
 ```
 
 ## Example code to require
