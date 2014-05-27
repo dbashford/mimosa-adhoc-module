@@ -12,7 +12,7 @@ Add `'adhoc-module'` to your list of modules. Mimosa will install the module for
 
 ## Functionality
 
-This module forwards registation and workflow functions on to your code, allowing local code to be directly linked into Mimosa's workflows.
+This module forwards registration and workflow functions on to your code, allowing local code to be directly linked into Mimosa's workflows.
 
 ## Default Config
 
